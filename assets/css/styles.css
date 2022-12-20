@@ -1,0 +1,294 @@
+
+*{
+    margin: 0;  
+    padding: 0;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+
+h1{
+    font-size: 5.5rem;
+    font-size: 700;
+}
+
+h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+
+/*--------- footer ---------*/
+.pie{
+    background-color: #003567;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    min-height: 16rem;
+}
+
+.pie-item{
+    margin-top: 4%;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor{
+    flex: 1;
+    margin: 3rem 4rem;
+}
+
+.foot-interno{
+    background-color: #E0E0E0;
+    color: #333333;
+    font-size: 1.4rem;
+    min-height: 16rem;
+    z-index: -1;
+}
+
+
+/*--------- Menú ---------*/
+
+.horario{
+    background-color: #003567;
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding: 3.5rem 0;
+}
+
+
+.menu{
+    border-right: 2.4rem solid #CCCCCC;
+}
+
+
+.navbar {
+    background-color: #FFFFFF;
+}
+
+.nav-item{
+    margin-left: 3rem;
+}
+
+.selector{
+    border: .1rem solid #003567;
+    position: relative;
+    left: .3rem;
+    opacity: 0%;
+}
+
+.nav-item a:hover .selector{
+    animation: selectorleft .8s forwards;
+    left: -1rem;
+}
+
+@keyframes selectorleft {
+    0%{
+        left: .4rem;
+        opacity: 0%;
+    }
+    100%{
+        left: -1.2rem;
+        opacity: 100%;
+    }
+}
+
+.nav-item a.active .selector{
+    left: -1.2rem;
+    opacity: 100%;
+}
+/*--------- Tarjetas servicios index ---------*/
+
+.cards{
+    height: 60rem;
+    overflow: hidden;
+}
+
+
+.card-img{
+    height: 60rem;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.cards:hover .card-img{
+    animation: slideup .8s forwards;
+}
+
+@keyframes slideup{
+    0%{
+        height: 100%;
+    }
+
+    100%{
+        height: 35%;
+        background-size: cover;
+    }
+}
+
+
+.card1{
+    background-image: linear-gradient(rgba(29, 54, 68, 0.8),rgba(0, 120, 183, .8)), url("../img/hz-trans-002.jpg");
+    background-position: right; 
+}
+
+
+.card2{
+    background-image: linear-gradient(rgba(141, 44, 55, .8),rgba(141, 44, 55, .8)), url("../img/hz-tserv-001.jpg");
+    background-position: right;
+}
+
+.card3{
+    background-image: linear-gradient(rgba(0, 53, 103, .8),rgba(0, 53, 103, .8)), url("../img/hz-tmari-001.jpg");
+    background-position: center;
+}
+
+.card4{
+    background-image: linear-gradient(rgba(72, 98, 126, .8),rgba(72, 98, 126, .8)), url("../img/hz-tmari-002.jpg");
+    background-position: center;
+}
+
+/*--------- Cards servicios---------*/
+
+.submenu-link a{
+    color: #333333;
+}
+
+.submenu-link a:hover{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 700;
+}
+
+hr{
+    height: .2rem;
+    border-color: #053561;
+}
+
+/*--------- botones---------*/
+.btn-transparente{
+    color: #333333;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-formato{
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    border-radius: .6rem;
+    border:none;
+    padding: .5rem;
+    height: 4.3rem;
+    width: 15rem;
+}
+
+.btn-azul{
+    background-color: #003567;
+}
+
+.btn-azul-secundario{
+    background-color: #0078B7;
+}
+
+.btn-rojo{
+    background-color: #8D2C37;
+}
+
+.btn-gris{
+    background-color: #48627E;
+}
+
+.btn-desplegar::after{
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    content: "\f106";
+}
+
+.btn-desplegar.collapsed::after{
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    content: "\f107";
+}
+
+/*--------- inputs login ---------*/
+
+.input-login{
+    height: 4.8rem;
+    width: 80%;
+    font-size: 1.6rem;
+    border: .3rem solid #003567;
+    border-radius: 2.4rem;
+    text-indent: 1.5rem;
+}
+
+.input-login::placeholder{
+    font-family: 'Montserrat', 'Font Awesome 5 free';
+    font-weight: 900;
+    color: #CCCCCC;
+}
+
+
+/*--------- Header login ---------*/
+.head-login{
+    background-color: #003567;
+    height: 15rem;
+    color: #FFFFFF;
+}
+
+.head-login img{
+    height: 7rem; 
+    width: 8rem;
+    filter: invert(1);
+}
+
+/*--------- menú lateral ---------*/
+.menu-lateral{
+    min-height: 80rem;
+    background-color: #003567;
+}
+
+.menu-lateral-item a{
+    display: block;
+    margin-top: 1.5rem;
+    padding: 1rem 0 1rem 3.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right,#003567 49%,#E0E0E0 49%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-position .4s;
+}
+
+.menu-lateral-item a:hover{
+    background-position: right;
+    color: #003567;
+    text-decoration: none;
+}
+
+
+.menu-lateral-item a.active{
+    background-position: right;
+    color: #003567;
+}
+
+thead{
+    background-color: #003567;
+    color: #FFFFFF;
+}
